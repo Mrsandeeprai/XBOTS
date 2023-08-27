@@ -8,11 +8,11 @@ START_BUTTON = [
         Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/official_mr_king"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/yaaro_ki_mehfil_group")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/Masoom_bacha_hu"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://telegra.ph/file/b9373115f5a1af5c728bc.jpg")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://te.legra.ph/file/6d31a016e5d76ee5ec1b6.mp4")
+        Button.url("• ʀᴇᴘᴏ •", "https://telegra.ph/file/934a4a8a103606a260396.jpg")
     ]
 ]
 
@@ -34,13 +34,13 @@ async def start(event):
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐀xᴇɴ](https://t.me/Santani_hu_bro)**\n\n"
-        TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [Mr_Bhumihar](https://t.me/Masoom_bacha_hu)**\n\n"
+        TEXT += f"» **Bhumihar ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://graph.org/file/8022fa293650fd7d91aec.jpg",
+                    "https://telegra.ph/file/934a4a8a103606a260396.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
