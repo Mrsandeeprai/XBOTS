@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ 𝙓𝘽𝙤𝙩𝙨 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Santani_hu_bro**"
+HELP_STRING = f"★ 𝙓𝘽𝙤𝙩𝙨 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Masoom_bacha_hu**"
 
 HELP_BUTTON = [
     [
@@ -11,11 +11,11 @@ HELP_BUTTON = [
       Button.inline("• ʀᴀɪᴅ •", data="raid")
     ],
     [
-      Button.inline("• ᴇxᴛʀᴀ •", data="extra")
+      Button.inline("• Mr_Bhumihar •", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/@official_mr_king"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/yaaro_ki_mehfil_group")
+      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/Masoom_bacha_hu"),
+      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://telegra.ph/file/b9373115f5a1af5c728bc.jpg")
     ]
   ]
 
@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/05b36381f0ddf9800cfe5.jpg",
+              "https://telegra.ph/file/934a4a8a103606a260396.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -60,7 +60,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @Santani_hu_bro**
+**© @Masoom_bacha_hu**
 """
 
                  
@@ -92,7 +92,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @Santani_hu_bro**
+**© @Masoom_bacha_hu**
 """
 
 spam_msg = f"""
@@ -109,7 +109,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-** © @Santani_hu_bro**
+** © @Masoom_bacha_hu**
 """                     
            
            
@@ -136,13 +136,13 @@ async def helpback(event):
                 Button.inline("• ᴇxᴛʀᴀ •", data="extra")
               ],
               [
-                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/official_mr_king"),
-                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/yaaro_ki_mehfil_group")
+                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/Masoom_bacha_hu"),
+                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://telegra.ph/file/934a4a8a103606a260396.jpg")
               ]
             ]
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @Santani_hu_bro", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !! @Masoom_bacha_hu", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -161,7 +161,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("Make Your Own Altron Bots !! @Santani_hu_bro", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !! @Masoom_bacha_hu", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -180,7 +180,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @Santani_hu_bro", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !! @Masoom_bacha_hu", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +199,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Altron Bots !@Santani_hu_bro", cache_time=0, alert=True)
+        await event.answer("Make Your Own Altron Bots !@Masoom_bacha_hu", cache_time=0, alert=True)
